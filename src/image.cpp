@@ -5,13 +5,13 @@ void displayStats()
 {
     displayStart();
     display.setTextColor(C_BLACK, C_WHITE); // Set text color to black on white
-    display.setFont(&Roboto_12);
+    display.setFont(&Roboto_16); // make font bigger
     display.setTextSize(1);
     // display status message
-    display.setCursor(1155, 820);
+    display.setCursor(1128, 46); // display text on top right
 
     // text to print over box
-    display.printf("[%s]", timeString().c_str());
+    display.printf("%s", timeString().c_str()); // remove brackets
     displayEnd();
 }
 
